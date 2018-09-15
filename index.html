@@ -20,6 +20,20 @@
 		#places{
 			float:right;
 		}
+		#songs{
+			float:left;
+		}
+		.heading{
+			font-size:60px;
+			margin:0 auto;
+		}
+		.date{
+			color:gray;
+			margin:0 auto;
+		}
+		.blogs{
+			
+		}
 	</style>
 </head>
 <body>
@@ -36,18 +50,47 @@
 	</div>
 	<div id = "content">
 		<div class = "container">
-			<p style = "font-size:25px">&nbsp;&nbsp;&nbsp;&nbsp;<strong><span id = "homepEl">HomePage</span></strong>&nbsp;&nbsp;&nbsp;<span id = "blogsEl">Blogs</span></p>
 			<div id = "places">
-		<p><span style = "font-size:50px">Places&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br><span style="font-size:20px">I've recently been to </span></p>
-		<hr size = 5px color = "#000000">
-		<img src = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536993410933&di=1722e89b0dc1fae38fc4daf227c4576e&imgtype=0&src=http%3A%2F%2Fp.chanyouji.cn%2F47869%2F1372412730594p17u52on5611pu19tt13bp1qjn1pih2.jpg" width = 300px>
-		<br>
-		<img src = "http://f10.baidu.com/it/u=4208996965,771801028&fm=72" width = 300px>
-		<br>
-		<img src = "https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=e359cbc9a61ea8d39e2f7c56f6635b2b/267f9e2f07082838cf93a066b899a9014c08f122.jpg" width = 300px>
-	</div>
+				<p><span style = "font-size:50px">Gallery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br><span style="font-size:20px">favourite photos </span></p>
+				<hr size = 5px color = "#000000">
+			<div class = "photos">
+				<div id = "photosRight">
+					<img src = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536993410933&di=1722e89b0dc1fae38fc4daf227c4576e&imgtype=0&src=http%3A%2F%2Fp.chanyouji.cn%2F47869%2F1372412730594p17u52on5611pu19tt13bp1qjn1pih2.jpg" width = 350px>
+					<br>
+					<img src = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536995921190&di=300b8db70f05b864eab25443b4c05d67&imgtype=0&src=http%3A%2F%2Fi2.hdslb.com%2Fbfs%2Farchive%2F7bceaa90d24dd24cd9b548420716132369f3ee1b.jpg" width = 350px>
+					<br>
+					<img src = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536996838958&di=25affa48bc970c77a34c1e85205eabf8&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-02-05%2F224948646.jpg" width = 350px>
+				</div>
+			</div>
 		</div>
-		
+		<br>
+
+		<div class = "blogs">
+			<p class = "heading">
+				Self Intro
+			</p>
+			<p class = "date">
+				9/15 Friday
+			</p>
+			<div>
+				<p style="font-size:20px;color">
+					My name is Terry. I'm 12 years this year. I am from Haizhu Experimental Primary School. I live with my family in Haizhu district. In my house, there is me, my mum, my dad and my baby sister. We enjoy our daily life, and we usually go travelling in holidays.
+				</p>	
+			</div>
+		</div>
+			<div class = "blogs">
+			<p class = "heading">
+				Hobbies
+			</p>
+			<p class = "date">
+				9/15 Friday
+			</p>
+			<div>
+				<p style="font-size:20px;color">
+					 When I have free time, I usually do thing I like. I never get bored, because I have a huge variety of hobbies. What I like most is programming. When other are playing games, I make games. I make games which is simple in rules but hard in playing. I like music too. I always listen do different kinds of music when I am doing anything (if I am allowed, of course). I am also an composing hobbist. I have a Launchpad at home, an instrument with a lot of buttons, give tunes and light effect when you press it. This magical machine allows me to play my favorite music.
+				</p>	
+			</div>
+		</div>
 	</div>
 	
 	<div id = "footer">
@@ -56,17 +99,6 @@
 		</div>
 	</div>
 	
-	<script>
-		var homelink = document.getElementById("homepEl");
-		var blogslink = document.getElementById("blogsEl");
-		var skiphome = function(){
-			window.location.href = 'index.html';
-		}
-		var skipblog = function(){
-			window.location.href = 'blogs.html';
-		}
-		homelink.addEventListener("click",skiphome);
-		blogslink.addEventListener("click",skipblog);
-	</script>
+	
 </body>
 </html>
